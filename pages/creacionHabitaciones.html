@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/materialize.css">
+    <link rel="stylesheet" href="../css/creacionHabitaciones.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/materialize.css">
+    <script src="js/jQuery.js"></script>
+
+    <title>Document</title>
+</head>
+<header>
+    <nav class="colorFondo">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down ul1">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="">Reservas</a></li>
+                <li><a href="">Servicios</a></li>
+            </ul>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="login.html">Iniciar Secion</a></li>
+                <li><a href="registro.html">registrarse</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <ul class="sidenav " id="mobile-demo">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="">Reservas</a></li>
+        <li><a href="">Servicios</a></li>
+        <li><a href="login.html">Iniciar secion</a></li>
+        <li><a href="registro.html">Registrarse</a></li>
+    </ul>
+</header>
+<body>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <!-- la terminacion en las variables H (variableH) hace referencia a Habitacion -->
+            <form class="col s12 " id="registroHab">
+                <div class="input-field">
+                    <input required type="text" id="nHabitaciones" name="numeroHabitacion">
+                    <label data-error="wrong" data-success="right for="nHabitaciones">Numero de habitacion</label>
+                </div>
+                <div class="input-field">
+                    <input required type="number" id="costoH" name="costoH">
+                    <label for="costoH"> Costo de la habitacion:</label>
+                </div> 
+                <div class="input-field col s12">
+                    <select name="acomodacionH">
+                        <option value="" disabled selected>Selecciona tu tipo de habitacion</option>
+                        <option value="sencilla">Sencilla</option>
+                        <option value="doble">Doble</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                </div>
+                <div class="file-field input-field">
+                    <div class="btn">
+                        <span>File</span>
+                        <input required type="file" accept="image/*" id="fileImg">
+                        <img alt="" id="preview">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" name="imagenH">
+                    </div>
+                </div> 
+                <input class="waves-effect waves-light btn" value="Guardar" type="submit">
+            </form>
+        </div>
+    </div>
+</section>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="../js/uuid.js"></script>
+<script src="../js/creacionHabitaciones.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/materialize.js"></script>
+</body>
+</html>
