@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.buscador-reserva{
+    padding: 6% 0;
+}
+.res{
+    background-color:#607d8b;
+}
+.res h5{
+    font-size: 16px;
+}
+.bt1{
+    margin-top: 25%;
+}
+.im-logo{
+    width: 10%;
+    height: auto;
+}

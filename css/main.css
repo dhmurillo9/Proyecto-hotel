@@ -11,6 +11,7 @@
 nav{
     position: fixed;
     z-index: 900;
+    margin-top: 0
     
 }
 /*etiqueta para el color de fondo*/
@@ -191,7 +192,7 @@ nav{
 /*________FOOTER_________________*/
 footer{
     overflow: hidden;
-    
+    background-color:  #13347a;
 }
 .R1{
     position: relative;
